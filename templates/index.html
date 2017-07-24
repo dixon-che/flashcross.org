@@ -22,13 +22,134 @@
      <script src="/static/js/jquery.validate.min.js" type="text/javascript"></script>
     <!-- Custom styles for this template -->
      <script src="http://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
-     <script src="/static/js/jquery.validate.min.js" type="text/javascript"></script>
-     <script src="/static/js/jquery.dataTables.min.js" type="text/javascript"></script>
-     <script type="text/javascript" src="/static/js/fc.js"></script>
+     <script src="{% static 'js/jquery.validate.min.js' %}" type="text/javascript"></script>
+     <script src="{% static 'js/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+     <script src="{% static 'js/fc.js' %}" type="text/javascript"></script>
       </head> 
-<body>
-  
-text
 
+
+<body>
+  <div id="header"></div>
+  <div id="main">
+    <div id="nav">
+
+      <div id="MenuLeft">
+       <ul style="list-style-type:none; margin-left:-40px; margin-right: 1045px;">
+        <li><a href="/">главная</a></li>
+        <li><a id="Games" href="/games">игры</a></li>
+        <li><a href="/showplayers">игроки</a></li>
+        <li><a href="/news">новости</a><a href="http://feeds.feedburner.com/Kharkov-Flash-Cross"><img style="height:14px;" src="/img/rss.jpeg" alt="rss" /></a></li>
+        <li><a href="/rate">рейтинг</a></li>
+        <li><a href="/forum" rel="external">форум</a></li>
+        <li><a href="/gal/main.php" rel="external">галерея</a></li>
+        <li><a href="/rest" rel="external">чтиво</a></li>
+        <li>&nbsp;</li>
+        <li><a href="/map">карта</a><!--<img src="/img/new3.gif">--></li>
+        <li><a href="/pobediteli">алея славы</a><!--<img src="/img/new3.gif">--></li>
+        <li><a href="/authors">авторы игры</a></li>
+        <li>&nbsp;</li>
+        <li><a target=_blank href="http://flashcross.org/rest/aktivnyi-otdyh/korporativ-flash-cross">КОРПОРАТИВ</a><img src="/img/new3.gif"></li>
+        <li>&nbsp;</li>
+        <li><a href="/faq">F.A.Q.</a></li>
+        <!--<li><a href="http://kharkov.flashcross.org/2007/" rel="extaernal">ÀÐÕÈÂ-2007</a></li>-->
+        <li>&nbsp;</li>
+        <li><a href="/spons" rel="extaernal">спонсоры</a></li>
+        <li><a href="/org">оргонизаторы</a></li>
+        <li>&nbsp;</li>
+
+        <li style="margin-left:7px"><g:plusone></g:plusone></li>
+        <li>&nbsp;</li>
+        <li><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4df20b126cd58a10"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+    {literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4df20b126cd58a10"></script>{/literal}
+
+    </li>
+        <li>&nbsp;</li>
+        <li><a href="https://www.facebook.com/groups/flashcross/" rel="extaernal" ><img src="/img/fb_ok.png" alt="Ãóïïà Flash-Cross FaceBook" /></a></li>
+        <li><p class="LeftMenuText">генеральный спонсор</p></li>
+
+        <li><img src="/img/vacancy.gif" alt="Âàêàíñèÿ" /></li>
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">спонсор</p></li>
+        <li><a href="http://unisport.ua/" rel="external"><img src="/img/UNISPORT_130.png" alt="Unisport" /></a></li>
+        <li>&nbsp;</li>
+        <li><a href="http://vnutri.quest.ua/" rel="external"><img src="/img/vnutri_130.jpg" alt="Êâåñò-êîìíàòà Âíóòðè" /></a></li>
+        <li>&nbsp;</li>
+        <li><a href="https://www.facebook.com/julia.evdokimova.14" rel="external"><img src="/img/yulia_130.jpg" alt="Ïñèõîëîãè÷åñêàÿ òðàíñôîðìàöèîííàÿ èãðà Astrum" /></a></li>
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">генеральный медиапартнёр</p></li>
+
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">партнеры</p></li>
+        <li><a href="http://pubstena.com/" rel="external"><img src="/img/stena_logo_130.png" alt="Ðîê Ïàá Ñòåíà" /></a></li>
+        <li>&nbsp;</li>
+
+        <li><a href="http://www.halogen-dg.com/" rel="external"><img src="/img/logof2_hal_sm.gif" alt="Ãàëîãåí Äåâåëîïìåíò Ãðóï" /></a></li>
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">информационный спонсор</p></li>
+        <li><a href="http://tourist.kharkov.ua" rel="external"><img src="/img/logof2.gif" alt="Õàðüêîâ Òóðèñò" /></a></li>
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">информационный партнер</p></li>
+
+        <li><p class="LeftMenuText">партнеры</p></li>
+
+        <li><a href="/kharkov.en.cx" rel="external"><img  src="/img/en-logo_130.png" alt="EnCounter" /></a></li>
+        <li>&nbsp;</li>
+
+        <li><a href="/bike.co.ua" rel="external"><img src="/img/cond_banner_sm.jpg" alt="Ñîöèàëüíàÿ ñåòü âåëîñèïåäèñòîâ" /></a></li>
+        <li>&nbsp;</li>
+        <li><p class="LeftMenuText">организаторы</p></li>
+
+        </div>
+
+ <!--  <div id="layout"> -->
+        <div id="MainText" style="float:left; width:400px; margin-left:222px; margin-top:-1855px; ">
+      <h1 class="Text2">Активный отдых - это Flash-Cross!</h1><br />
+      <div style="text-align:left"><p>Этот сайт посвящен <strong>активному отдыху</strong>, в частности спортивно-развлекательному мероприятию "вело-фото-квест Flash-Cross" ("Флэш-кросс"), в котором разумно сочетается и  <strong>велосипед</strong>, и <strong>фото</strong>, и <strong>игра</strong>, и <strong>драйв</strong>. Сайт предназначен:</p>
+    <ul>
+    <li>для разностороннего освещения предстоящих и прошедших мероприятий;</li>
+    <li>для предоставления активным и потенциальным участникам официальной информации от организаторов;</li>
+    <li>для самостоятельной регистрации участников и команд на предстоящую игру;</li>
+    <li>для обнародования результатов мероприятия и итоговых рейтингов участников.</li></ul><br />
+    <p>Чтобы понять что такое  <strong>Flash-Cross</strong>, рекомендуем изучить раздел <a href="/faq">F.A.Q.</a> <br />
+    Мы намерены всесторонее привлекать к организации мероприятий инициативные коллективы авторов, желающих попробовать свои силы в организации. Если вы чувствуете в себе желания и силы к организации игры и у вас появились идеи, как внести в игру новую струю - милости просим, обращайтесь к организаторам любым удобным способом.<br /><br />
+    </p>
+      </div><br />
+        <div style="align:center">
+          {include file=googleadv/300_250.html}
+        </div><br/><br/>
+        <div style="align:center">наши <a href="/img/fc_banner_new.jpg">БАННЕРЫ Flash-Cross<br />
+          <img src="/img/fc_banner_new.jpg" alt="активный отдых" /></a><br /><br />
+          <a href="/img/fc_banner_kharkov.jpg">БАНЕРЫ Flash-Cross харьков<br />
+          <img src="/img/fc_banner_kharkov_sm.jpg" alt="активный отдых Харьков" /></a><br /><br />
+           <a href="/img/fc_kn.jpg">Кнопка<br />
+          <img src="/img/fc_kn.jpg" alt="активный отдых Харьков" /></a><br/>
+        </div>
+    </div>
+</div>
+
+
+    <div class="RightNews">
+       <h2>Ближайшая игра</h2>
+       <div>
+       тут будут ближайшие игры
+      </div>
+    <h2>Новоси</h2>
+    <table height=100px cellpadding="0" cellspacing="4">
+    Таблица с новостями
+    </table>
+    <a href="/news">ссылка на все новости &gt;&gt;</a>
+    <h2>Последние прошедшие игры</h2>
+      <ul style="list-style-type:none">
+     спсок прошедших игр
+      </ul>
+      <a href="/games">линк на все игры &gt;&gt;</a>
+      <h2>Последние добавленные статьи</h2>
+      <ul style="list-style-type:none">
+      список статья
+       <a href="/games">линк на статьи &gt;&gt;</a>
+    </div>
+   </div>
+<div id="footer"></div>
 
 </body>

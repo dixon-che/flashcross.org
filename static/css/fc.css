@@ -24,13 +24,13 @@ form {
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image:url('../../img/header.jpg')
+	background-image:url('../img/header.jpg')
 }
 #main {
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url(../../img/back.jpg);
+	background-image: url('../img/back.jpg');
 	background-repeat: repeat-y;
 	background-position: center;
 }
@@ -109,7 +109,7 @@ form {
 	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
-	background-image: url("../../img/footer.jpg")
+	background-image: url("../img/footer.jpg")
 }
 #note {
 	background-color: #FFFFFF;
@@ -575,7 +575,8 @@ div#hiddentl{ position:relative; top:1; left:0; right:0; visibility:hidden;}
 	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 	float:right; 
-	width:305px;
+	width:358px;
+	margin-top: -1853px;
 }
 .RightNews li{
 	margin-left:-15px;

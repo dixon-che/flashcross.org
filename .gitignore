@@ -5,10 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
-
+README.md
 bin/
 include/
 pip-selfcheck.json
+.gitignore
 
 # Distribution / packaging
 .Python
