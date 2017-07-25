@@ -1,0 +1,521 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"forms"
+			],
+			[
+				"p",
+				"pk"
+			],
+			[
+				"user",
+				"user_file"
+			],
+			[
+				"use",
+				"user_file"
+			],
+			[
+				"d",
+				"default"
+			],
+			[
+				"cr",
+				"create_profile"
+			],
+			[
+				"de",
+				"default"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"a",
+				"args"
+			],
+			[
+				"cl",
+				"clean_data"
+			],
+			[
+				"Lesso",
+				"LessonCreateView"
+			],
+			[
+				"tes",
+				"test"
+			],
+			[
+				"s",
+				"src\tAttr"
+			],
+			[
+				"lo",
+				"logger"
+			],
+			[
+				"cou",
+				"course_id"
+			],
+			[
+				"co",
+				"course"
+			],
+			[
+				"cont",
+				"container"
+			],
+			[
+				"f",
+				"forms"
+			],
+			[
+				"m",
+				"models"
+			],
+			[
+				"Ca",
+				"CharField"
+			],
+			[
+				"get",
+				"get_context_data"
+			],
+			[
+				"Create",
+				"CreateView"
+			],
+			[
+				"stu",
+				"student"
+			],
+			[
+				"course",
+				"course_id"
+			],
+			[
+				"Get",
+				"GET"
+			],
+			[
+				"st",
+				"student"
+			],
+			[
+				"stude",
+				"student_id"
+			],
+			[
+				"mo",
+				"model_form"
+			],
+			[
+				"c",
+				"class\tAttr"
+			],
+			[
+				"R",
+				"raise"
+			],
+			[
+				"clea",
+				"cleaned_data"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"resu",
+				"result_massage"
+			],
+			[
+				"or",
+				"order"
+			],
+			[
+				"ge",
+				"get_eq_root"
+			],
+			[
+				"res",
+				"result_massage"
+			],
+			[
+				"nam",
+				"name_value"
+			],
+			[
+				"na",
+				"name_value"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"e",
+				"error_massage"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"pa",
+				"panel-heading"
+			],
+			[
+				"end",
+				"endblock"
+			],
+			[
+				"Co",
+				"Course"
+			],
+			[
+				"coa",
+				"coach"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"C",
+				"CharField"
+			],
+			[
+				"cour",
+				"courses"
+			],
+			[
+				"r",
+				"request"
+			],
+			[
+				"ma",
+				"max_length"
+			],
+			[
+				"In",
+				"InstructorAdmin"
+			],
+			[
+				"q",
+				"quadratic_results"
+			],
+			[
+				"fro",
+				"from"
+			],
+			[
+				"qu",
+				"quadratic_results"
+			],
+			[
+				"str",
+				"strx"
+			],
+			[
+				"x2",
+				"x2str"
+			],
+			[
+				"x1",
+				"x1str"
+			],
+			[
+				"i",
+				"import"
+			],
+			[
+				"__",
+				"__str__"
+			],
+			[
+				"conta",
+				"Contacts"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/big_dipper/D101/kr2/venv/Students/views.py",
+		"/home/big_dipper/D101/kr2/venv/templates/Students/base.html",
+		"/home/big_dipper/D101/kr2/venv/templates/edit/edit/edit_userprofile.html",
+		"/home/big_dipper/D101/kr2/venv/login/urls.py",
+		"/home/big_dipper/D101/kr2/venv/templates/login/login.html",
+		"/home/big_dipper/D101/kr2/venv/templates/login/user_detail.html",
+		"/home/big_dipper/D101/kr2/venv/login/views.py",
+		"/home/big_dipper/D101/kr2/venv/login/forms.py",
+		"/home/big_dipper/D101/kr2/venv/login/admin.py",
+		"/home/big_dipper/D101/kr2/venv/login/models.py",
+		"/home/big_dipper/D101/kr2/venv/coaches/admin.py",
+		"/home/big_dipper/D101/kr2/venv/templates/base.html",
+		"/home/big_dipper/D101/kr2/venv/templates/coaches/coach_detail.html",
+		"/home/big_dipper/D101/kr2/venv/pybursa/views.py",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/urls.py",
+		"/home/big_dipper/D101/kr2/venv/pybursa/urls.py",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/apps.py",
+		"/home/big_dipper/D101/hello/hello/accounts/models.py",
+		"/home/big_dipper/D101/hello/hello/accounts/views.py",
+		"/home/big_dipper/D101/kr2/venv/pybursa/settings.py",
+		"/home/big_dipper/D101/kr2/venv/accounts/models.py",
+		"/home/big_dipper/Документы/templates/accounts/change_password.html",
+		"/home/big_dipper/D101/kr2/venv/templates/accounts/profile.html",
+		"/home/big_dipper/Документы/templates/admin/base_site.html",
+		"/home/big_dipper/D101/kr2/venv/accounts/admin.py",
+		"/home/big_dipper/D101/kr2/venv/accounts/views.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/view.py",
+		"/home/big_dipper/D101/kr2/venv/Courses/models.py",
+		"/home/big_dipper/D101/kr2/venv/Courses/forms.py",
+		"/home/big_dipper/D101/kr2/venv/Courses/views.py",
+		"/home/big_dipper/D101/kr2/venv/templates/course/course_detail.html",
+		"/home/big_dipper/D101/kr2/venv/pybursa/local_settings.py",
+		"/home/big_dipper/D101/kr2/venv/Courses/tests.py",
+		"/home/big_dipper/D101/kr2/venv/Students/urls.py",
+		"/home/big_dipper/D101/kr2/venv/coaches/models.py",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/models.py",
+		"/home/big_dipper/Blog/Blog/article/models.py",
+		"/home/big_dipper/blog/Blog/Blog/Blog/settings.py",
+		"/home/big_dipper/D101/kr2/venv/Students/models.py",
+		"/home/big_dipper/D101/kr2/venv/Students/tests.py",
+		"/home/big_dipper/D101/kr2/venv/templates/Students/student_list.html",
+		"/home/big_dipper/D101/kr2/venv/templates/remove/remove/remove_course.html",
+		"/home/big_dipper/D101/kr2/venv/templates/404.html",
+		"/home/big_dipper/D101/kr2/venv/templates/edit/edit/edit_course.html",
+		"/home/big_dipper/D101/kr2/venv/templates/contact.html",
+		"/home/big_dipper/D101/kr2/venv/templates/500.html",
+		"/home/big_dipper/D101/kr2/venv/templates/add/create/add_course.html",
+		"/home/big_dipper/D101/kr2/venv/templates/add/create/add_lesson.html",
+		"/home/big_dipper/D101/kr2/venv/Courses/urls.py",
+		"/home/big_dipper/D101/kr2/venv/templates/index.html",
+		"/home/big_dipper/D101/kr2/venv/templates/add/create/add_student.html",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/views.py",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/forms.py",
+		"/home/big_dipper/D101/kr2/venv/coaches/views.py",
+		"/home/big_dipper/D101/kr2/venv/templates/Include/coach_include.html",
+		"/home/big_dipper/D101/kr2/venv/feedbacks/admin.py",
+		"/home/big_dipper/D101/kr2/venv/Courses/admin.py",
+		"/home/big_dipper/D101/kr2/venv/templates/feedback.html",
+		"/home/big_dipper/D101/kr2/venv/Students/admin.py",
+		"/home/big_dipper/D101/kr2/venv/templates/coaches/detail.html",
+		"/home/big_dipper/D101/kr2/venv/Students/forms.py",
+		"/home/big_dipper/D101/kr2/venv/templates/edit/edit/edit_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/remove/remove/remove_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/Students/add_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/students/base.html",
+		"/home/big_dipper/D101/kr2/venv/templates/Students/student_detail.html",
+		"/home/big_dipper/D101/kr2/venv/templates/Students/Students_of_course.html",
+		"/home/big_dipper/D101/kr2/venv/quadratic/forms.py",
+		"/home/big_dipper/D101/kr2/venv/templates/students/student_list.html",
+		"/home/big_dipper/D101/kr2/venv/templates/results.html",
+		"/home/big_dipper/D101/kr2/venv/quadratic/views .py",
+		"/home/big_dipper/D101/kr2/venv/templates/students/add_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/remove/remove_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/edit/edit_student.html",
+		"/home/big_dipper/D101/kr2/venv/templates/students/student_detail.html",
+		"/home/big_dipper/D101/kr2/venv/polls/models.py",
+		"/home/big_dipper/D101/kr2/venv/templates/students/Students_of_course.html",
+		"/home/big_dipper/D101/week2/hello/hello/instructors/models.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/models.py",
+		"/home/big_dipper/D101/kr2/venv/templates/admin/base_site.html",
+		"/home/big_dipper/D101/kr2/venv/templates/admin/bace_site.html",
+		"/home/big_dipper/D101/kr2/venv/templates/student_detail.html",
+		"/home/big_dipper/D101/kr2/venv/templates/student_list.html",
+		"/home/big_dipper/D101/kr2/venv/templates/Students_of_course.html",
+		"/home/big_dipper/D101/kr2/venv/templates/course_detail.html",
+		"/home/big_dipper/D101/kr2/venv/templates/course.html",
+		"/home/big_dipper/D101/kr2/venv/templates/cources.html",
+		"/home/big_dipper/Рабочий стол/cources_django.html",
+		"/home/big_dipper/D101/kr2/venv/templates/cources_js.html",
+		"/home/big_dipper/D101/kr2/venv/templates/cources_python.html",
+		"/home/big_dipper/D101/kr2/venv/templates/cources_django.html",
+		"/home/big_dipper/D101/week2/hello/hello/templates/instructors.html",
+		"/home/big_dipper/D101/week2/hello/hello/instructors/views.py",
+		"/home/big_dipper/D101/kr2/venv/Course/models.py",
+		"/home/big_dipper/D101/kr2/venv/Cource/models.py",
+		"/home/big_dipper/D101/kr2/venv/Lesson/models.py",
+		"/home/big_dipper/D101/week2/hello/hello/instructors/admin.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/admin.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/tests.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/views (копия).py",
+		"/home/big_dipper/.local/share/Trash/files/views.py",
+		"/home/big_dipper/D101/kr2/venv/quadratic/views.py",
+		"/home/big_dipper/test.py",
+		"/home/big_dipper/D101/hello/hello/instructors/views.py",
+		"/home/big_dipper/D101/week2/hello/hello/templates/results.html",
+		"/home/big_dipper/D101/kr2/venv/polls/urls.py",
+		"/home/big_dipper/D101/kr2/venv/polls/views.py"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"UserProfile",
+			"accounts",
+			"LOGGING",
+			"date",
+			"url(r'^admin/', admin.site.urls),",
+			"'\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
