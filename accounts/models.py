@@ -8,6 +8,8 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 
 
+
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
     adress = models.CharField(max_length=100, default=None)
@@ -17,7 +19,7 @@ class UserProfile(models.Model):
 		('Female', 'F')
 		)
     gander = models.CharField(max_length=6, choices=GANDER_CHOISE)
-    skype = models.CharField(max_length=30)
+    skype = models.CharField(max_length=30, default=None)
 
 
     def __str__(self):

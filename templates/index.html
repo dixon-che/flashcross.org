@@ -42,7 +42,15 @@
     <input  class="LoginEdit" name="fLogin" type="text" id="fLogin" size="13" />&nbsp;&nbsp;пароль
     <input class="LoginEdit" name="fPassword" type="password" id="fPassword" size="13" maxlength="10" />
     <input class="EnterButton" style="" type="submit" name="Submit2" value="Вход" />
-    &nbsp;|&nbsp; <a class="TopMenu" href="/CreatePlayer">новый игрок</a>&nbsp;|&nbsp;
+<!-- 
+    <form action="" method="post">
+      {% csrf_token %}
+      
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-info" >войти</button>
+    </form> -->
+
+    &nbsp;|&nbsp; <a class="TopMenu" href="{% url 'register_user' %}">новый игрок</a>&nbsp;|&nbsp;
     <a class="TopMenu" href="/RestorePassword">забыли пароль?</a>    
   </fieldset>
   </form>
