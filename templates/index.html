@@ -29,127 +29,309 @@
 
 
 <body>
-  <div id="header"></div>
+ <div id="header"></div>
   <div id="main">
-    <div id="nav">
+    <div id="login"> 
 
-      <div id="MenuLeft">
-       <ul style="list-style-type:none; margin-left:-40px; margin-right: 1045px;">
-        <li><a href="/">главная</a></li>
-        <li><a id="Games" href="/games">игры</a></li>
-        <li><a href="/showplayers">игроки</a></li>
-        <li><a href="/news">новости</a><a href="http://feeds.feedburner.com/Kharkov-Flash-Cross"><img style="height:14px;" src="/img/rss.jpeg" alt="rss" /></a></li>
-        <li><a href="/rate">рейтинг</a></li>
-        <li><a href="/forum" rel="external">форум</a></li>
-        <li><a href="/gal/main.php" rel="external">галерея</a></li>
-        <li><a href="/rest" rel="external">чтиво</a></li>
-        <li>&nbsp;</li>
-        <li><a href="/map">карта</a><!--<img src="/img/new3.gif">--></li>
-        <li><a href="/pobediteli">алея славы</a><!--<img src="/img/new3.gif">--></li>
-        <li><a href="/authors">авторы игры</a></li>
-        <li>&nbsp;</li>
-        <li><a target=_blank href="http://flashcross.org/rest/aktivnyi-otdyh/korporativ-flash-cross">КОРПОРАТИВ</a><img src="/img/new3.gif"></li>
-        <li>&nbsp;</li>
-        <li><a href="/faq">F.A.Q.</a></li>
-        <!--<li><a href="http://kharkov.flashcross.org/2007/" rel="extaernal">ÀÐÕÈÂ-2007</a></li>-->
-        <li>&nbsp;</li>
-        <li><a href="/spons" rel="extaernal">спонсоры</a></li>
-        <li><a href="/org">оргонизаторы</a></li>
-        <li>&nbsp;</li>
+<div class="MenuText">   <form action="/" method="post">
+  <fieldset>
+    <input name="do" type="hidden" id="do" value="login" />
+    <input name="fReturnToPrevPage" type="hidden" value="" />
+    <input name="fReturnToCurrPage" type="hidden" value="%2F" />
+    логин
+    <input  class="LoginEdit" name="fLogin" type="text" id="fLogin" size="13" />&nbsp;&nbsp;пароль
+    <input class="LoginEdit" name="fPassword" type="password" id="fPassword" size="13" maxlength="10" />
+    <input class="EnterButton" style="" type="submit" name="Submit2" value="Вход" />
+    &nbsp;|&nbsp; <a class="TopMenu" href="/CreatePlayer">новый игрок</a>&nbsp;|&nbsp;
+    <a class="TopMenu" href="/RestorePassword">забыли пароль?</a>    
+  </fieldset>
+  </form>
+   </div> </div>
+    <div id="nav"> 
+                      <span>главная</span>
+                  </div>    
+    <div id="layout">
 
-        <li style="margin-left:7px"><g:plusone></g:plusone></li>
-        <li>&nbsp;</li>
-        <li><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4df20b126cd58a10"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
-    {literal}<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
-    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4df20b126cd58a10"></script>{/literal}
+<div class="leftmenu"><div id="MenuLeft">
+  <ul style="list-style-type:none; margin-left:-40px;">
+    <li><a href="/">главная</a></li>
+    <li><a id="Games" href="/games">игры</a></li>
+    <li><a href="/showplayers">игроки</a></li>
+    <li><a href="/news">новости</a><a href="http://feeds.feedburner.com/Kharkov-Flash-Cross"><img style="height:14px;" src="/img/rss.jpeg" alt="rss" /></a></li>
+    <li><a href="/rate">рейтинг</a></li>
+    <li><a href="/forum" rel="external">форум</a></li>
+    <li><a href="/gal/main.php" rel="external">галерея</a></li>
+    <li><a href="/rest" rel="external">чтиво</a></li>
+    <li>&nbsp;</li>
+    <li><a href="/map">карта</a><!--<img src="/img/new3.gif">--></li>
+    <li><a href="/pobediteli">аллея славы</a><!--<img src="/img/new3.gif">--></li>
+    <li><a href="/authors">авторы игр</a></li>
+    <li>&nbsp;</li>
+    <li><a target=_blank href="http://flashcross.org/rest/aktivnyi-otdyh/korporativ-flash-cross">КОРПОРАТИВ</a><img src="/img/new3.gif"></li>
+    <li>&nbsp;</li>
+    <li><a href="/faq">F.A.Q.</a></li>
+    <!--<li><a href="http://kharkov.flashcross.org/2007/" rel="extaernal">АРХИВ-2007</a></li>-->
+    <li>&nbsp;</li>
+    <li><a href="/spons" rel="extaernal">спонсоры</a></li>
+    <li><a href="/org">организаторы</a></li>
+    <li>&nbsp;</li>
+    <!--<li><a href="/fc16/press_release_fc16.pdf">пресс-релиз</a></li>-->
+    <li style="margin-left:7px"><g:plusone></g:plusone></li>
+    <li>&nbsp;</li>
+    <li><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=ra-4df20b126cd58a10"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4df20b126cd58a10"></script>
+<!-- AddThis Button END -->
+</li>
+    <li>&nbsp;</li>
+    <li><a href="https://www.facebook.com/groups/flashcross/" rel="extaernal" ><img src="/img/fb_ok.png" alt="Гуппа Flash-Cross FaceBook" /></a></li>
+    <li><p class="LeftMenuText">генеральный спонсор</p></li>
 
-    </li>
-        <li>&nbsp;</li>
-        <li><a href="https://www.facebook.com/groups/flashcross/" rel="extaernal" ><img src="/img/fb_ok.png" alt="Ãóïïà Flash-Cross FaceBook" /></a></li>
-        <li><p class="LeftMenuText">генеральный спонсор</p></li>
+    <li><img src="/img/vacancy.gif" alt="Вакансия" /></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">спонсоры</p></li>
+    <li><a href="http://unisport.ua/" rel="external"><img src="/img/UNISPORT_130.png" alt="Unisport" /></a></li>
+    <li>&nbsp;</li>
+    <li><a href="http://vnutri.quest.ua/" rel="external"><img src="/img/vnutri_130.jpg" alt="Квест-комната Внутри" /></a></li>
+    <li>&nbsp;</li>
+    <li><a href="https://www.facebook.com/julia.evdokimova.14" rel="external"><img src="/img/yulia_130.jpg" alt="Психологическая трансформационная игра Astrum" /></a></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">генеральный медиапартнёр</p></li>
 
-        <li><img src="/img/vacancy.gif" alt="Âàêàíñèÿ" /></li>
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">спонсор</p></li>
-        <li><a href="http://unisport.ua/" rel="external"><img src="/img/UNISPORT_130.png" alt="Unisport" /></a></li>
-        <li>&nbsp;</li>
-        <li><a href="http://vnutri.quest.ua/" rel="external"><img src="/img/vnutri_130.jpg" alt="Êâåñò-êîìíàòà Âíóòðè" /></a></li>
-        <li>&nbsp;</li>
-        <li><a href="https://www.facebook.com/julia.evdokimova.14" rel="external"><img src="/img/yulia_130.jpg" alt="Ïñèõîëîãè÷åñêàÿ òðàíñôîðìàöèîííàÿ èãðà Astrum" /></a></li>
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">генеральный медиапартнёр</p></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">партнеры</p></li>
+    <li><a href="http://pubstena.com/" rel="external"><img src="/img/stena_logo_130.png" alt="Рок Паб Стена" /></a></li>
+    <li>&nbsp;</li>
 
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">партнеры</p></li>
-        <li><a href="http://pubstena.com/" rel="external"><img src="/img/stena_logo_130.png" alt="Ðîê Ïàá Ñòåíà" /></a></li>
-        <li>&nbsp;</li>
+    <li><a href="http://www.halogen-dg.com/" rel="external"><img src="/img/logof2_hal_sm.gif" alt="Галоген Девелопмент Груп" /></a></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">информационный спонсор</p></li>
+    <li><a href="http://tourist.kharkov.ua" rel="external"><img src="/img/logof2.gif" alt="Харьков Турист" /></a></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">информационный партнёр</p></li>
 
-        <li><a href="http://www.halogen-dg.com/" rel="external"><img src="/img/logof2_hal_sm.gif" alt="Ãàëîãåí Äåâåëîïìåíò Ãðóï" /></a></li>
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">информационный спонсор</p></li>
-        <li><a href="http://tourist.kharkov.ua" rel="external"><img src="/img/logof2.gif" alt="Õàðüêîâ Òóðèñò" /></a></li>
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">информационный партнер</p></li>
+    <li><p class="LeftMenuText">партнёры</p></li>
 
-        <li><p class="LeftMenuText">партнеры</p></li>
+    <li><a href="/kharkov.en.cx" rel="external"><img  src="/img/en-logo_130.png" alt="EnCounter" /></a></li>
+    <li>&nbsp;</li>
 
-        <li><a href="/kharkov.en.cx" rel="external"><img  src="/img/en-logo_130.png" alt="EnCounter" /></a></li>
-        <li>&nbsp;</li>
+    <li><a href="/bike.co.ua" rel="external"><img src="/img/cond_banner_sm.jpg" alt="Социальная сеть велосипедистов" /></a></li>
+    <li>&nbsp;</li>
+    <li><p class="LeftMenuText">организатор</p></li>
 
-        <li><a href="/bike.co.ua" rel="external"><img src="/img/cond_banner_sm.jpg" alt="Ñîöèàëüíàÿ ñåòü âåëîñèïåäèñòîâ" /></a></li>
-        <li>&nbsp;</li>
-        <li><p class="LeftMenuText">организаторы</p></li>
+    <li><p class="LeftMenuText">где еще играем</p></li>
+    <li><a href="http://world.flashcross.org/" rel="external">World</a></li>
+    <li><a href="/kiev" rel="external">Киев</a></li>
+    <li><a href="http://poltava.flashcross.org/" rel="external">Полтава</a></li>
+    <li><a href="/bel" rel="external">Белгород</a></li>
+    <li><a href="http://kr.flashcross.org/" rel="external">Кропивницкий</a><img src="/img/new3.gif"></li>
+    <li><a href="/dnepr" rel="external">Днепропетровск</a></li>
+    <li><a href="http://crimea.flashcross.org/" rel="external">Крым</a></li>
+    <li><p class="LeftMenuText">реклама</p></li>
 
-        </div>
 
- <!--  <div id="layout"> -->
-        <div id="MainText" style="float:left; width:400px; margin-left:222px; margin-top:-1855px; ">
-      <h1 class="Text2">Активный отдых - это Flash-Cross!</h1><br />
-      <div style="text-align:left"><p>Этот сайт посвящен <strong>активному отдыху</strong>, в частности спортивно-развлекательному мероприятию "вело-фото-квест Flash-Cross" ("Флэш-кросс"), в котором разумно сочетается и  <strong>велосипед</strong>, и <strong>фото</strong>, и <strong>игра</strong>, и <strong>драйв</strong>. Сайт предназначен:</p>
-    <ul>
-    <li>для разностороннего освещения предстоящих и прошедших мероприятий;</li>
-    <li>для предоставления активным и потенциальным участникам официальной информации от организаторов;</li>
-    <li>для самостоятельной регистрации участников и команд на предстоящую игру;</li>
-    <li>для обнародования результатов мероприятия и итоговых рейтингов участников.</li></ul><br />
-    <p>Чтобы понять что такое  <strong>Flash-Cross</strong>, рекомендуем изучить раздел <a href="/faq">F.A.Q.</a> <br />
-    Мы намерены всесторонее привлекать к организации мероприятий инициативные коллективы авторов, желающих попробовать свои силы в организации. Если вы чувствуете в себе желания и силы к организации игры и у вас появились идеи, как внести в игру новую струю - милости просим, обращайтесь к организаторам любым удобным способом.<br /><br />
-    </p>
-      </div><br />
-        <div style="align:center">
-          {include file=googleadv/300_250.html}
-        </div><br/><br/>
-        <div style="align:center">наши <a href="/img/fc_banner_new.jpg">БАННЕРЫ Flash-Cross<br />
-          <img src="/img/fc_banner_new.jpg" alt="активный отдых" /></a><br /><br />
-          <a href="/img/fc_banner_kharkov.jpg">БАНЕРЫ Flash-Cross харьков<br />
-          <img src="/img/fc_banner_kharkov_sm.jpg" alt="активный отдых Харьков" /></a><br /><br />
-           <a href="/img/fc_kn.jpg">Кнопка<br />
-          <img src="/img/fc_kn.jpg" alt="активный отдых Харьков" /></a><br/>
-        </div>
+
+  </ul>
+
+<!--fc9118408e3265852cf5e29d2e4dc85f-->
+<script type="text/javascript"><!--
+google_ad_client = "pub-4869950373648564";
+/* 120x600, создано 25.08.10 */
+google_ad_slot = "1428208756";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div></div>
+<div class="rightContent">
+    <div id="MainText" style="float:left; width:400px;">
+  <h1 class="Text2">Активный отдых - это Flash-Cross!</h1><br />
+  <div style="text-align:left"><p>Этот сайт посвящен <strong>активному отдыху</strong>, в частности спортивно-развлекательному мероприятию "вело-фото-квест Flash-Cross"    ("Флэш-кросс"), в котором разумно сочетается и <strong>велосипед</strong>, и <strong>фото</strong>, и <strong>игра</strong>, и <strong>драйв</strong>. Сайт предназначен:</p>
+<ul>
+<li>для разностороннего освещения предстоящих и прошедших мероприятий;</li>
+<li>для предоставления активным и потенциальным участникам официальной информации от организаторов;</li>
+<li>для самостоятельной регистрации участников и команд на предстоящую игру;</li>
+<li>для обнародования результатов мероприятия и итоговых рейтингов участников.</li></ul><br />
+<p>Чтобы понять что такое <strong>Flash-Cross</strong>, рекомендуем изучить раздел <a href="/faq">F.A.Q.</a> <br />
+Мы намерены всесторонее привлекать к организации мероприятий инициативные коллективы авторов, желающих попробовать свои силы в организации. Если вы чувствуете в себе желания и силы к организации игры и у вас появились идеи, как внести в игру новую струю - милости просим, обращайтесь к организаторам любым удобным способом.<br /><br />
+</p>
+  </div><br />
+    <div style="align:center">
+      
+<!--b8a5b10c816686fd9c79c6089b29991e-->
+<script type="text/javascript"><!--
+  google_ad_client = "pub-4869950373648564";
+  google_ad_slot = "9366642257";
+  google_ad_width = 300;
+  google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>    </div><br/><br/>
+    <div style="align:center">Наши <a href="/img/fc_banner_new.jpg">БАННЕР Flash-Cross<br />
+      <img src="/img/fc_banner_new.jpg" alt="активный отдых" /></a><br /><br />
+      <a href="/img/fc_banner_kharkov.jpg">БАННЕР Flash-Cross Харьков<br />
+      <img src="/img/fc_banner_kharkov_sm.jpg" alt="активный отдых харьков" /></a><br /><br />
+      и <a href="/img/fc_kn.jpg">КНОПКА<br />
+      <img src="/img/fc_kn.jpg" alt="активный отдых харьков" /></a><br/>
     </div>
 </div>
-
-
-    <div class="RightNews">
-       <h2>Ближайшая игра</h2>
-       <div>
-       тут будут ближайшие игры
-      </div>
-    <h2>Новоси</h2>
-    <table height=100px cellpadding="0" cellspacing="4">
-    Таблица с новостями
-    </table>
-    <a href="/news">ссылка на все новости &gt;&gt;</a>
-    <h2>Последние прошедшие игры</h2>
-      <ul style="list-style-type:none">
-     спсок прошедших игр
-      </ul>
-      <a href="/games">линк на все игры &gt;&gt;</a>
-      <h2>Последние добавленные статьи</h2>
-      <ul style="list-style-type:none">
-      список статья
-       <a href="/games">линк на статьи &gt;&gt;</a>
+<div class="RightNews">
+   <h2>Ближайшая игра</h2>
+   <div class="vevent"><a class="url" href="/games/FC-32-igra-slov">FC-32. Игра слов</a><span class="summary"><span class="value-title" title="Flash Cross 32 - Игра слов"></span></span><br/>(<span class="dtstart">22 июля 2017г.</span>)<br/><a href="/games/FC-32-igra-slov/photo">фотозадания</a> , <a href="/games/FC-32-igra-slov/res">результаты</a><br/><a href="/games/FC-32-igra-slov/moving">перемещение команд</a>   <span class="location vcard">
+      <span class="fn">
+          <span class="value-title" title="Flash Cross 32 - Игра слов" ></span>
+          </span> 
+          <span class="geo">
+             <span class="latitude">
+                <span class="value-title" title="49.785818" ></span>
+             </span>
+             <span class="longitude">
+                <span class="value-title" title="36.035719"></span>
+             </span>
+          </span>
+  </span>
     </div>
-   </div>
-<div id="footer"></div>
+<h2>Новости</h2>
+<table height=100px cellpadding="0" cellspacing="4">
+  <tr>
+    <td style="background-color:#EFEFEF"><p><strong>Flash-Cross-32 (22 июля, Харьков)</strong></p><p>21 июня 2017г. 12:06:27</p></td>
+  </tr>
+  <tr>
+    <td class="NewsText">Приглашаем! Подробности <a href="http://kharkov.flashcross.org/games/FC-32-igra-slov">страничке игры</a><br /><br /></td>
+  </tr>
+  <tr>
+    <td style="background-color:#EFEFEF"><p><strong>Чемпионат Харьковской области по велоориентировани</strong></p><p>18 мая 2017г. 17:05:29</p></td>
+  </tr>
+  <tr>
+    <td class="NewsText"><a href="http://orienteering.kh.ua/Event/Read/id/675
+/">Чемпионат Харьковской области по велоориентированию. Большая Даниловка. Дистанция средня. 21.05.2017 в 11:00</a><br /><br /></td>
+  </tr>
+  <tr>
+    <td style="background-color:#EFEFEF"><p><strong>Flash-Cross. Осенний велодень</strong></p><p>14 сентября 2016г. 16:09:54</p></td>
+  </tr>
+  <tr>
+    <td class="NewsText">18 сентября 2016 года в рамках «Европейской недели мобильности» и «Осеннего велодня 2016» состоится Вело-пеше-фото-квест «Flash-Cross. Осенний велодень», который будет проводиться в г.Харьков (окрестности ул.Университетской).
+Приглашаем харьковчан и участников из других городов. Участие БЕСПЛАТНОЕ!
+Подробности на <a href=" http://world.flashcross.org/games/flash-cross-osenniy-veloden-2">сайте</a><br /><br /></td>
+  </tr>
+</table>
+<a href="/news">Все новости &gt;&gt;</a>
+<h2>Последние прошедшие игры</h2>
+  <ul style="list-style-type:none">
+        <li class="vevent"><a class="url" href="/games/FC-30-binarnaya-osen">- FC #30. Бинарная осень </a><span class="summary"><span class="value-title" title="Flash Cross 30 - Бинарная осень"></span><span class="dtstart"><span class="value-title" title="2016-10-01"></span></span>
+  <span class="location vcard">
+      <span class="fn">
+          <span class="value-title" title="Flash Cross 30 - Бинарная осень" ></span>
+          </span> 
+          <span class="geo">
+             <span class="latitude">
+                <span class="value-title" title="50.055274" ></span>
+             </span>
+             <span class="longitude">
+                <span class="value-title" title="36.263485"></span>
+             </span>
+          </span>
+  </span></li>    <li class="vevent"><a class="url" href="/games/FC-31-na-nevedomih-dorozhkah">- FC-31. На неведомых дорожках</a><span class="summary"><span class="value-title" title="Flash Cross 31 - На неведомых дорожках"></span><span class="dtstart"><span class="value-title" title="2016-07-09"></span></span>
+  <span class="location vcard">
+      <span class="fn">
+          <span class="value-title" title="Flash Cross 31 - На неведомых дорожках" ></span>
+          </span> 
+          <span class="geo">
+             <span class="latitude">
+                <span class="value-title" title="49.855191" ></span>
+             </span>
+             <span class="longitude">
+                <span class="value-title" title="36.258902"></span>
+             </span>
+          </span>
+  </span></li>    <li class="vevent"><a class="url" href="/games/fc-29-money-money">- FC-29. Money, Money</a><span class="summary"><span class="value-title" title="Flash Cross 29 - Money, Money"></span><span class="dtstart"><span class="value-title" title="2016-05-21"></span></span>
+  <span class="location vcard">
+      <span class="fn">
+          <span class="value-title" title="Flash Cross 29 - Money, Money" ></span>
+          </span> 
+          <span class="geo">
+             <span class="latitude">
+                <span class="value-title" title="49.98306" ></span>
+             </span>
+             <span class="longitude">
+                <span class="value-title" title="36.52386"></span>
+             </span>
+          </span>
+  </span></li>    <li class="vevent"><a class="url" href="/games/FC-28-velo-lego-go">- FC-28. Velo Lego GO!</a><span class="summary"><span class="value-title" title="Flash Cross 28 - Velo Lego GO!"></span><span class="dtstart"><span class="value-title" title="2015-07-18"></span></span>
+  <span class="location vcard">
+      <span class="fn">
+          <span class="value-title" title="Flash Cross 28 - Velo Lego GO!" ></span>
+          </span> 
+          <span class="geo">
+             <span class="latitude">
+                <span class="value-title" title="50.230449" ></span>
+             </span>
+             <span class="longitude">
+                <span class="value-title" title="36.388764"></span>
+             </span>
+          </span>
+  </span></li>    </ul>
+  <a href="/games">Все игры &gt;&gt;</a>
+  <h2>Последние добавленные статьи</h2>
+  <ul style="list-style-type:none">
+    <li><a rel="external" href="http://flashcross.org/rest/aktivnyi-otdyh/flashcross32-kharkov">- Flash-Cross-32 (Харьков, 22.07.2017)                                        </a></li>
+    <li><a rel="external" href="http://flashcross.org/rest/flash-cross/flash-cross-learn">- Для тех, кто впервые знакомится с Flash-Cross              </a></li>
+    <li><a rel="external" href="http://flashcross.org/rest/flash-cross/flash-cross-26-kak-eto-bilo">- Flash-Cross-26 "Очумелые ручки". Как это было!                                             </a></li>
+    </ul>
+  <a rel="external" href="href="http://flashcross.org/rest">Все статьи &gt;&gt;</a>
+
+<!--b8a5b10c816686fd9c79c6089b29991e-->
+<script type="text/javascript"><!--
+  google_ad_client = "pub-4869950373648564";
+  google_ad_slot = "9366642257";
+  google_ad_width = 300;
+  google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>  
+<!--a61ae125a17f2499b8d43811eea14694-->
+<script type="text/javascript"><!--
+google_ad_client = "pub-4869950373648564";
+/*  */
+google_ad_slot = "2854883118";
+google_ad_width = 728;
+google_ad_height = 90;
+google_language ="ru";
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div>
+    <div style="clear:both">&nbsp;</div>
+    <div id="copyright">powered by <a href="mailto:elfstyle@ukr.net">elfstyle</a></div>
+    <div>
+
+<!-- Топ Traveller -->
+<a href='http://traveller.com.ua' rel="external" title='Активный отдых. Активные туры. Каталог туристических сайтов.'><img src="http://traveller.com.ua/top/img.php?id=1557" alt="Активный отдых. Активные туры. Каталог туристических сайтов." style="width:88px;height:31px" /></a>
+<!-- /Топ Traveller -->
+
+
+<a href="http://webplus.info/index.php?page=47&amp;add_top_url=43814"><img 
+alt="Каталог webplus.info" src="http://webplus.info/getres.php?infoforurl=43814" /></a>
+
+<a href="http://www.i.ua/" rel="external" onclick="this.href='http://i.ua/r.php?88853';" title="Rated by I.UA">
+<script type="text/javascript">
+iS='<img src="http://r.i.ua/s?u88853&p139&n'+Math.random();
+iD=document;iD.cookie="iua=1";if(iD.cookie)iS+='&c1';
+iS+='&d'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)
++"&w"+screen.width+'&h'+screen.height;
+iT=iD.referrer.slice(7);iH=window.location.href.slice(7);
+((iI=iT.indexOf('/'))!=-1)?(iT=iT.substring(0,iI)):(iI=iT.length);
+if(iT!=iH.substring(0,iI))iS+='&f'+escape(iD.referrer.slice(7));
+iS+='&r'+escape(iH);
+iD.write(iS+'" border="0" width="88" height="31" />');
+</script></a>
+
+
+</div>  </div>
+  <div id="footer"></div>
 
 </body>
