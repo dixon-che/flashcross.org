@@ -20,10 +20,11 @@ from accounts import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',index),
+    url(r'^$',views.LoginFormView.as_view()),
 
-    url(r'^login/$', views.LoginFormView.as_view()),
+    # url(r'^login/$', views.LoginFormView.as_view()),
     url(r'^register/$', views.RegistrationForm.as_view(), name='register_user'),
+    url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
     
 
 ]
