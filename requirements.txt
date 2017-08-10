@@ -1,2 +1,3 @@
-Django==1.11.3
+# Inherits requirements/prod.txt
 
+-r requirements/prod.txt
