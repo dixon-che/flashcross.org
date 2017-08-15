@@ -3,7 +3,7 @@ django-bootstrap3==6.1.0
 sqlparse==0.1.19
 django-registration-redux==1.4
 httplib2==0.9.1
-
+oauth2==1.5.211
 oauthlib==1.0.1
 Pillow==2.9.0
 python-openid==2.2.5
