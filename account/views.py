@@ -41,7 +41,7 @@ def logout_view(request):
 @sensitive_post_parameters()
 @csrf_protect
 @never_cache
-def login(request, template_name='registration/login.html',
+def login(request, template_name='base.html',
           redirect_field_name='next',
           authentication_form=AuthenticationForm,
           current_app=None, extra_context=None):

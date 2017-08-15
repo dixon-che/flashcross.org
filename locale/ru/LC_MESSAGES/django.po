@@ -170,8 +170,8 @@ msgstr "Настройки профиля"
 msgid "Logout"
 msgstr "Выйти"
 
-#: templates/base.html:69 templates/registration/registration_form.html:7
-#: templates/registration/registration_form.html:118
+#: templates/base.html:76 templates/registration/registration_form.html:15
+#: templates/registration/registration_form.html:15
 msgid "Sign Up"
 msgstr "Зарегестрироваться"
 
@@ -298,3 +298,7 @@ msgstr ""
 
 #~ msgid "Personal Area"
 #~ msgstr "Личный кабинет"
+
+#: templates/base.html:79
+msgid "Sign In"
+msgstr "Войти"
