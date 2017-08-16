@@ -226,10 +226,6 @@ NOSE_ARGS = [
     '--with-coverage',
 ]
 
-
-FACEBOOK_APP_ID = '302058126926208'
-FACEBOOK_API_SECRET = 'f730834b22fb0e5c352aabdbe48c9eb5'
-
 # try:
 #     from settings_local import *
 # except ImportError:
