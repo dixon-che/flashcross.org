@@ -35,13 +35,13 @@ from flashcross.mixins import LoginRequiredMixin
 
 def logout_view(request):
     logout(request)
-    return redirect('home')
+    return redirect('/')
 
 
 @sensitive_post_parameters()
 @csrf_protect
 @never_cache
-def login(request, template_name='base.html',
+def login(request, template_name='index.html',
           redirect_field_name='next',
           authentication_form=AuthenticationForm,
           current_app=None, extra_context=None):

@@ -8,7 +8,7 @@ urlpatterns = [
     url(r'^register/$', views.CustomRegistrationView.as_view(),
                            name='registration_register'),
     url(r'^logout/$', views.logout_view, name='logout'),
-    url(r'^login/$', views.login, name='login'),
+    # url(r'^login/$', views.login, name='login'),
     url(r'^$', views.ProfileSettingsView.as_view(), name='profile-settings'),
     url(r'^settings/email/$', views.EmailSettingsView.as_view(), name='email-settings'),
     url(r'^settings/email/verify/(?P<verification_key>\w+)/$', views.EmailVerifyView.as_view(), name='email-verify'),

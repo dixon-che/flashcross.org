@@ -81,7 +81,7 @@
     <!--     <h1>{% trans "Sign In" %}</h1> -->
 
    <form data-form-login class="form-horizontal" method="post"
-              action="{% url 'account:login' %}">
+              action="{% url 'login' %}">
             {% csrf_token %}
             {{ form.non_field_errors }}
 
