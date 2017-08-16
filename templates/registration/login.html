@@ -17,7 +17,7 @@
 
      <div class="jumbotron">
 
-        <h1>{% trans "Sign In" %}</h1>
+    <!--     <h1>{% trans "Sign In" %}</h1> -->
 
    <form data-form-login class="form-horizontal" method="post"
               action="{% url 'account:login' %}">
@@ -86,11 +86,6 @@
                     <button data-form-login-submit type="submit" class="btn btn-primary pull-right">{% trans "Sign In" %}</button>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-3 text-right">
-                    <p><strong>{% trans "Sign In With" %}</strong></p>
-                </div>
 
                 <div class="col-sm-9">
                     {% for backend in backends.backends %}

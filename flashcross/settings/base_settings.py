@@ -106,7 +106,8 @@ AUTH_USER_MODEL = 'account.Account'
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en'
+
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -224,10 +225,6 @@ NOSE_ARGS = [
     '--cover-package=flashcross',
     '--with-coverage',
 ]
-
-
-FACEBOOK_APP_ID = '107924883228084'
-FACEBOOK_API_SECRET = 'e3137731148721847bb4eef06fa0fd27'
 
 # try:
 #     from settings_local import *

@@ -3,6 +3,8 @@
 {% load i18n %}
 
 {% load bower %}
+
+{% load backend_utils %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,7 +40,7 @@
 <body>
  <div id="header"></div>
   <div id="main">
-    <div id="login"> 
+      <div id="login"> 
 
 <div class="MenuText">
 
@@ -74,17 +76,105 @@
             </ul>
 
           {% if not user.is_authenticated %}
+      <div class="jumbotron">
+
+    <!--     <h1>{% trans "Sign In" %}</h1> -->
+
+   <form data-form-login class="form-horizontal" method="post"
+              action="{% url 'login' %}">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+
+            <div class="form-group">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-9">
+                    {% if form.username.errors %}
+                        <ul style="margin:0; padding:0;">
+                            {% for error in form.username.errors %}
+                                <li class="text-danger"
+                                    style="list-style: none;">{{ error|escape }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <label for="{{ form.username.id_for_label }}" class="col-sm-3
+            control-label">{% trans "Nickname" %}</label>
+
+                <div class="col-sm-9">
+                    <input type="text"
+                           class="form-control required"
+                           id="{{ form.username.id_for_label }}"
+                           name="{{ form.username.html_name }}"
+                           placeholder={% trans "Nickname" %}
+                           maxlength="{{ form.username.field.max_length }}"
+                           value="{% if form.username.value %}{{ form.username.value }}{% endif %}"/>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-9">
+                    {% if form.password.errors %}
+                        <ul style="margin:0; padding:0;">
+                            {% for error in form.password.errors %}
+                                <li class="text-danger"
+                                    style="list-style: none;">{{ error|escape }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+                <label for="{{ form.password.id_for_label }}" class="col-sm-3
+            control-label">{% trans "Password" %}</label>
+
+                <div class="col-sm-9">
+                    <input type="password"
+                           class="form-control required"
+                           id="{{ form.password.id_for_label }}"
+                           name="{{ form.password.html_name }}"
+                           placeholder={% trans "Password" %}
+                           value="{% if form.password.value %}{{ form.password.value }}{% endif %}"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">{% trans "I have an account, but I have " %}
+                    <a href="{% url 'password_reset' %}">
+                        {% trans "forgot a password" %}
+                    </a>
+                </div>
+                <div class="col-sm-3">
+                    <button data-form-login-submit type="submit" class="btn btn-primary pull-right">{% trans "Sign In" %}</button>
+                </div>
+            </div>
+
+                <div class="col-sm-9">
+                    {% for backend in backends.backends %}
+                        <a data-social-url class="custom_img-thumbnail_link btn btn-social-icon btn-{{ backend|backend_class }}" href="{% url 'social:begin' backend %}">
+                            <span class="fa fa-{{ backend|backend_class }}"></span>
+                        </a>
+                    {% endfor %}
+
+                          {% if not user.is_authenticated %}
             <a class="btn btn-primary" href="{% url 'registration_register' %}">{% trans "Sign Up" %}</a>
-            <a class="btn btn-success" href="{% url 'account:login' %}?next={{ request.get_full_path }}">
-              {% trans "Sign In" %}
             </a>
           {% endif %}
-          </div>
+                </div>
+            
+        </form>
+        </div>
+</div>
+
+          {% endif %}
+          
       
  <!--    <a class="TopMenu" href="/RestorePassword">забыли пароль?</a>     -->
   </fieldset>
   </form>
    </div> </div>
+
+    {% include 'account/message.html' %}
+
     <div id="nav"> 
                       <span>главная</span>
                   </div>    
