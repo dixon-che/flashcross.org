@@ -154,6 +154,11 @@
                             <span class="fa fa-{{ backend|backend_class }}"></span>
                         </a>
                     {% endfor %}
+
+                          {% if not user.is_authenticated %}
+            <a class="btn btn-primary" href="{% url 'registration_register' %}">{% trans "Sign Up" %}</a>
+            </a>
+          {% endif %}
                 </div>
             
         </form>

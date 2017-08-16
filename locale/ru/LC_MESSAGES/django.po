@@ -119,6 +119,7 @@ msgstr "Поменять фото"
 #: templates/registration/login.html:28 templates/registration/login.html:35
 #: templates/registration/registration_form.html:24
 #: templates/registration/registration_form.html:30
+#: templates/index.html:70
 msgid "Nickname"
 msgstr "Никнейм"
 
