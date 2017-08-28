@@ -49,7 +49,7 @@
                    name="{{ form.avatar.html_name }}" />
             <img data-profile-img class="g-avatar" src="{% if account.avatar %}{{ account.avatar.url }}{% else %}{% static 'images/avatar.jpeg' %}{% endif %}" width="100" height="100" alt="">
             <label for="{{ form.avatar.id_for_label }}" style="cursor: pointer"
-                   class="control-label">{% trans "Change photo" %}</label>
+                   class="control-label">{% trans "Изменить фото" %}</label>
           </div>
         </div>
       </div>
@@ -68,13 +68,13 @@
       </div>
       <div class="form-group">
         <label for="{{ form.username.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Nickname" %}</label>
+        control-label">{% trans "Никнейм" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
                  id="{{ form.username.id_for_label }}"
                  name="{{ form.username.html_name }}"
-                 placeholder="{% trans "Nickname" %}"
+                 placeholder="{% trans "Никнейм" %}"
                  maxlength="{{ form.username.field.max_length }}"
                  value="{% if form.username.value %}{{ form.username.value }}{% endif %}" />
         </div>
@@ -94,13 +94,13 @@
       </div>
       <div class="form-group">
         <label for="{{ form.first_name.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Name" %}</label>
+        control-label">{% trans "Имя" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
                  id="{{ form.first_name.id_for_label }}"
                  name="{{ form.first_name.html_name }}"
-                 placeholder="{% trans "Name" %}"
+                 placeholder="{% trans "Имя" %}"
                  value="{% if form.first_name.value %}{{ form.first_name.value }}{% endif %}" />
         </div>
       </div>
@@ -119,13 +119,13 @@
       </div>
       <div class="form-group">
         <label for="{{ form.last_name.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Surname" %}</label>
+        control-label">{% trans "Фамилия" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
                  id="{{ form.last_name.id_for_label }}"
                  name="{{ form.last_name.html_name }}"
-                 placeholder="{% trans "Surname" %}"
+                 placeholder="{% trans "Фамилия" %}"
                  value="{% if form.last_name.value %}{{ form.last_name.value }}{% endif %}" />
         </div>
       </div>
@@ -144,7 +144,7 @@
       </div>
       <div class="form-group">
         <label for="{{ form.bdate.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Birthdate" %}</label>
+        control-label">{% trans "Дата рождения" %}</label>
         <div class="col-sm-5">
           <div data-profile-bdate class='input-group date'>
             <input data-profile-bdate
@@ -152,7 +152,7 @@
                    class="form-control required"
                    id="{{ form.bdate.id_for_label }}"
                    name="{{ form.bdate.html_name }}"
-                   placeholder="{% trans "Birthdate" %}"
+                   placeholder="{% trans "Дата рождения" %}"
                    value="{% if form.bdate.value %}{{ form.bdate.value|date:"d.m.Y" }}{% endif %}" />
             <span class="input-group-addon">
               <span class="glyphicon glyphicon-calendar"></span>
@@ -175,13 +175,13 @@
       </div>
       <div class="form-group">
         <label for="{{ form.my_site.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Site" %}</label>
+        control-label">{% trans "Cайт" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
                  id="{{ form.my_site.id_for_label }}"
                  name="{{ form.my_site.html_name }}"
-                 placeholder="{% trans "Site" %}"
+                 placeholder="{% trans "Сайт" %}"
                  value="{% if form.my_site.value %}{{ form.my_site.value }}{% endif %}" />
         </div>
       </div>
@@ -200,7 +200,7 @@
       </div>
       <div class="form-group">
         <label for="{{ form.description.id_for_label }}" class="col-sm-2
-        control-label">{% trans "About me" %}</label>
+        control-label">{% trans "Обо мне" %}</label>
         <div class="col-sm-9">
           <textarea rows="5"
                     class="form-control"
@@ -244,7 +244,7 @@
       </div>
       <div class="form-group">
         <label for="{{ form.country.id_for_label }}" class="col-sm-2
-        control-label">{% trans "Country" %}</label>
+        control-label">{% trans "Страна" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
@@ -267,7 +267,7 @@
       </div>
       <div class="form-group">
         <label for="{{ form.city.id_for_label }}" class="col-sm-2
-        control-label">{% trans "City" %}</label>
+        control-label">{% trans "Город" %}</label>
         <div class="col-sm-9">
           <input type="text"
                  class="form-control required"
@@ -280,7 +280,7 @@
       <div class="form-group">
         <div class="col-sm-9">
           <input type="submit" class="btn btn-primary" value="
-          {% trans "Save" %}"/>
+          {% trans "Сохранить" %}"/>
         </div>
       </div>
     </form>

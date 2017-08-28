@@ -12,7 +12,7 @@
 {% block content %}
 
     <div class="jumbotron">
-            <h1>{% trans "Sign Up" %}</h1>
+            <h1>{% trans "Зарегестрироваться" %}</h1>
 
 <form data-form-registration class="form-horizontal" method="post" action="{% url 'registration_register' %}">
   {% csrf_token %}
@@ -29,13 +29,13 @@
       {% endif %}
     </div>
     <label for="{{ form.username.id_for_label }}" class="col-sm-3
-    control-label">{% trans "Nickname" %}</label>
+    control-label">{% trans "Никнейм" %}</label>
     <div class="col-sm-9">
       <input type="text"
              class="form-control required"
              id="{{ form.username.id_for_label }}"
              name="{{ form.username.html_name }}"
-             placeholder="{% trans "Nickname" %}"
+             placeholder="{% trans "Никнейм" %}"
              maxlength="{{ form.username.field.max_length }}"
              value="{% if form.username.value %}{{ form.username.value }}{% endif %}" />
     </div>
@@ -54,13 +54,13 @@
     </div>
 
     <label for="{{ form.email.id_for_label }}" class="col-sm-3
-    control-label">{% trans "Email" %}</label>
+    control-label">{% trans "Эл. почта" %}</label>
     <div class="col-sm-9">
             <input type="email"
              class="form-control required"
              id="{{ form.email.id_for_label }}"
              name="{{ form.email.html_name }}"
-             placeholder="{% trans "Email" %}"
+             placeholder="{% trans "Эл. почта" %}"
              value="{% if form.email.value %}{{ form.email.value }}{% endif %}" />
     </div>
   </div>
@@ -85,13 +85,13 @@
     </div>
 
     <label for="{{ form.password1.id_for_label }}" class="col-sm-3
-    control-label">{% trans "Password" %}</label>
+    control-label">{% trans "Пароль" %}</label>
     <div class="col-sm-9">
       <input type="password"
              class="form-control required"
              id="{{ form.password1.id_for_label }}"
              name="{{ form.password1.html_name }}"
-             placeholder="{% trans "Password" %}"
+             placeholder="{% trans "Пароль" %}"
              value="{% if form.password1.value %}{{ form.password1.value }}{% endif %}" />
     </div>
   </div>
@@ -109,13 +109,13 @@
     </div>
 
     <label for="{{ form.password2.id_for_label }}" class="col-sm-3
-    control-label">{% trans "Confirm Password" %}</label>
+    control-label">{% trans "Подтвердит пароль" %}</label>
     <div class="col-sm-9">
       <input type="password"
              class="form-control required"
              id="{{ form.password2.id_for_label }}"
              name="{{ form.password2.html_name }}"
-             placeholder="{% trans "Confirm Password" %}"
+             placeholder="{% trans "Подтвердит пароль" %}"
              value="{% if form.password2.value %}{{ form.password2.value }}{% endif %}" />
     </div>
   </div>
@@ -123,7 +123,7 @@
   <div class="form-group">
       <div class="col-sm-12">
           <button data-form-registration-submit type="submit" class="btn
-            btn-success pull-right">{% trans "Sign Up" %}</button>
+            btn-success pull-right">{% trans "Зарегестрироваться" %}</button>
       </div>
   </div>
 
