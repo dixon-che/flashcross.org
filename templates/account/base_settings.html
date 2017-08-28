@@ -5,14 +5,14 @@
       <ul class="nav nav-pills">
         <li role="presentation" {% block settings_profile_active %}{% endblock %}>
           <a href="{% url 'account:profile-settings' %}">
-              {% trans "Profile" %}</a>
+              {% trans "Профиль" %}</a>
         </li>
         <li role="presentation" {% block settings_email_active %}{% endblock %}>
           <a href="{% url 'account:email-settings' %}">{% trans "Email" %}</a>
         </li>
         <li role="presentation" {% block settings_password_active %}{% endblock %}>
           <a href="{% url 'account:password-settings' %}">
-              {% trans "Password" %}</a>
+              {% trans "Пароль" %}</a>
         </li>
       </ul>
     <div class="panel-body" style="padding: 15px 0;">
